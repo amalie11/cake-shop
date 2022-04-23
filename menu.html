@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:brown;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #F5C1CB;
+}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 18s slidy infinite; 
+}
+
+    </style>
+</head>
+<body>
+   <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="cake.html">Cakes</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="client.html">Clients</a></li>
+</ul> 
+
+<div id="slider">
+<figure>
+<img src="homecake.png" alt>
+<img src="cakead.jpg" alt>
+<img src="rainbowcake.jpg" alt>
+<img src="choco.jpg" alt>
+<img src="chc.jpg" alt>
+</figure>
+</div>
+</body>
+</html>

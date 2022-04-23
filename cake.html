@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:brown;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:brown;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #F5C1CB;
+}
+</style>
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="cake.html">Cakes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="client.html">Clients</a></li>
+      </ul> 
+
+<h2 style="text-align:center"> Our Cakes</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="rainbowcake.jpg"  style="width:100%">
+      <div class="container">
+        <h2>Rainbow Cake</h2>
+        <p class="title">A swirl of colors</p>
+        <p>"I just cant get enough of it"</p>
+        <p>amaliecakes.com</p>
+        <p><button class="button">BUY</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="choco.jpg"  style="width:100%">
+      <div class="container">
+        <h2>Chocolate Cake</h2>
+        <p class="title">Choco</p>
+        <p>"So rich and creamy"</p>
+        <p>amaliecakes.com</p>
+        <p><button class="button">BUY</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="pinkie.jpg"  style="width:100%">
+      <div class="container">
+        <h2>Pinkie</h2>
+        <p class="title">Strawberry Feel</p>
+        <p>"Love it!"</p>
+        <p>amaliecakes.com</p>
+        <p><button class="button">BUY</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="column">
+    <div class="card">
+      <img src="smash_cake_1_.jpg"  style="width:100%">
+      <div class="container">
+        <h2>Blueberry Blues</h2>
+        <p class="title">Berries</p>
+        <p>"Reminds me of my childhood!"</p>
+        <p>amaliecakes.com</p>
+        <p><button class="button">BUY</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="column">
+    <div class="card">
+      <img src="cakead.jpg"  style="width:100%">
+      <div class="container">
+        <h2>Red Velvet</h2>
+        <p class="title">Rich choco</p>
+        <p>"Tastes as good as it looks"</p>
+        <p>amaliecakes.com</p>
+        <p><button class="button">BUY</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="column">
+    <div class="card">
+      <img src="caramel.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Caramel Fun</h2>
+        <p class="title">Caramel</p>
+        <p>"So good!"</p>
+        <p>amaliecakes.com</p>
+        <p><button class="button">BUY</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
